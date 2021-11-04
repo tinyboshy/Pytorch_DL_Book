@@ -13,8 +13,20 @@ RUN apt update && \
                 libxext-dev \
                 x11-apps \
                 libgl1-mesa-dev \
-                libgtk2.0-dev
+                libgtk2.0-dev \
+                tree \
+                unzip
 
+RUN python -m pip install --upgrade pip && \
+    pip install numpy \
+                pandas \
+                matplotlib \
+                japanize-matplotlib \
+                jupyterlab \
+                torchviz \
+                ipywidgets \
+                widgetsnbextension
+                
 ARG DOCKER_UID=1000
 ARG DOCKER_USER=docker
 ARG DOCKER_PASSWORD=docker
