@@ -15,7 +15,8 @@ RUN apt update && \
                 libgl1-mesa-dev \
                 libgtk2.0-dev \
                 tree \
-                unzip
+                unzip \
+                graphviz
 
 RUN python -m pip install --upgrade pip && \
     pip install numpy \
