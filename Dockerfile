@@ -26,7 +26,10 @@ RUN python -m pip install --upgrade pip && \
                 jupyterlab \
                 torchviz \
                 ipywidgets \
-                widgetsnbextension
+                widgetsnbextension \
+                scikit-learn \
+                scikit-image \
+                torchinfo
                 
 ARG DOCKER_UID=1000
 ARG DOCKER_USER=docker
