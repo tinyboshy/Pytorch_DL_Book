@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 pytorch_book_info/
+
+data/
